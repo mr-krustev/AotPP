@@ -1,0 +1,458 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.py",
+			"settings":
+			{
+				"buffer_size": 3573,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "{\n    \"max-line-length\": 79,\n\n    // list codes for fixes; used by --ignore and --select\n    \"list-fixes\": \"\",\n\n    // do not fix these errors / warnings(e.g. E4, W)\n    \"ignore\": \"E24, E226\",\n\n    // select errors / warnings(e.g. E4, W)\n    \"select\": \"\",\n\n    // number of spaces per indent level\n    \"indent-size\": 4,\n\n    \"format_on_save\": false,\n    \"show_output_panel\": true,\n    // Format/Preview menu items only appear for views\n    // with syntax from `syntax_list`\n    // value is base filename of the .tmLanguage syntax files\n    \"syntax_list\": [\"Python\"],\n\n    \"file_menu_search_depth\": 3, // max depth to search python files\n\n    \"avoid_new_line_in_select_mode\": false,\n\n    // print debug info into the console\n    \"debug\": false\n}",
+			"file": "/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/AutoPEP8/AutoPep8.sublime-settings",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 744,
+				"line_ending": "Windows",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "hero.py",
+			"settings":
+			{
+				"buffer_size": 164,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 236.0,
+		"last_filter": "package insta",
+		"selected_items":
+		[
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Resource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Theme",
+				"UI: Select Theme"
+			],
+			[
+				"Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ColorSche",
+				"Color Scheme Editor: Edit current color scheme"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"Color Sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Snippet: ",
+				"Snippet: If Condition"
+			],
+			[
+				"Package Remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Inst\t",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Nazdael/Desktop/Adventures of the Programmer"
+	],
+	"file_history":
+	[
+		"/C/Users/Nazdael/Desktop/Adventures of the Programmer/README.md",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/Monokai.tmTheme",
+		"/C/Users/Nazdael/Desktop/Python Project/test.py",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/C/Users/Nazdael/Desktop/Python Project/Learning.sublime-project",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/Nazdael/Desktop/Python Project/Learning_Python.sublime-project",
+		"/C/Users/Nazdael/Desktop/test.py"
+	],
+	"find":
+	{
+		"height": 131.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Source",
+			"Embed",
+			"Embedded",
+			"background",
+			"True",
+			"start"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3573,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								914,
+								914
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 486.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/AutoPEP8/AutoPep8.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								141,
+								141
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "hero.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.autopep8":
+	{
+		"height": 141.0
+	},
+	"output.exec":
+	{
+		"height": 206.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 120.0
+	},
+	"pinned_build_system": "",
+	"project": "Adventures.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 152.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

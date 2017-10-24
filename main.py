@@ -1,6 +1,6 @@
 import msvcrt
 import random
-import time
+import updates as updates
 import os
 
 # This is where you start the APP.
@@ -23,33 +23,11 @@ def takeActionByKey(key, gameInfo):
     return True
 
 
-def updateEnemy(gameInfo):
-    gameInfo["enemyStrength"] = random.randrange(
-        1, gameInfo["playerStrength"] + 3)
+def isGameOver(gameInfo):
+    if(gameInfo["score"] <= -100):
+        return True
 
-
-def updateScore(gameInfo, hasWon, scoreAdjustment=1):
-    if (hasWon):
-        gameInfo["score"] = gameInfo["score"] + scoreAdjustment
-    else:
-        gameInfo["score"] = gameInfo["score"] - scoreAdjustment
-
-
-def updateExp(gameInfo, hasAcquired):
-    if(hasAcquired == False):
-        return
-    gameInfo["playerExp"] = gameInfo["playerExp"] + gameInfo["enemyStrength"]
-
-
-def updatePlayerLevelUp(gameInfo, hasEnoughExp):
-    if(hasEnoughExp):
-        gameInfo["playerStrength"] = gameInfo[
-            "playerStrength"] + gameInfo["playerLevel"] * 2
-        gameInfo["playerLevel"] = gameInfo["playerLevel"] + 1
-        gameInfo["playerExp"] = 0
-        gameInfo["expForNextLevel"] = gameInfo["expForNextLevel"] * 2
-    else:
-        updateScore(gameInfo, hasEnoughExp, gameInfo["enemyStrength"])
+    return False
 
 
 def playerDefend(gameInfo):
@@ -59,9 +37,10 @@ def playerDefend(gameInfo):
     else:
         print("Player Lost!")
 
-    updateExp(gameInfo, hasWon)
-    updateScore(gameInfo, hasWon)
-    updateEnemy(gameInfo)
+    updates.updateExp(gameInfo, hasWon)
+    playerLevelUp(gameInfo)
+    updates.updateScore(gameInfo, hasWon)
+    updates.updateEnemy(gameInfo)
 
 
 def playerAttack(gameInfo):
@@ -71,9 +50,10 @@ def playerAttack(gameInfo):
     else:
         print("Player Lost!")
 
-    updateExp(gameInfo, hasWon)
-    updateScore(gameInfo, hasWon)
-    updateEnemy(gameInfo)
+    updates.updateExp(gameInfo, hasWon)
+    playerLevelUp(gameInfo)
+    updates.updateScore(gameInfo, hasWon)
+    updates.updateEnemy(gameInfo)
 
 
 def playerHold(gameInfo):
@@ -83,23 +63,22 @@ def playerHold(gameInfo):
     else:
         print("Player Lost!")
 
-    updateExp(gameInfo, hasWon)
-    updateScore(gameInfo, hasWon)
-    updateEnemy(gameInfo)
+    updates.updateExp(gameInfo, hasWon)
+    playerLevelUp(gameInfo)
+    updates.updateScore(gameInfo, hasWon)
+    updates.updateEnemy(gameInfo)
 
 
 def playerLevelUp(gameInfo):
     hasEnoughExp = gameInfo["playerExp"] >= gameInfo["expForNextLevel"]
     if(hasEnoughExp):
         print("Leveled up!")
-    else:
-        print("Not enough experience, score penalty")
-    updatePlayerLevelUp(gameInfo, hasEnoughExp)
+    updates.updatePlayerLevelUp(gameInfo, hasEnoughExp)
 
 
 def printInfoBar(gameInfo):
     info = "\nPlayer strength: ", gameInfo["playerStrength"], "\tExperience: ", gameInfo["playerExp"], "\tExpReq:", gameInfo["expForNextLevel"], "\tScore: ", gameInfo[
-        "score"], "\nEnemy strength: ", gameInfo["enemyStrength"], "\nA=Attack,D=Defend,H=Hold,L=Level Up\n\n"
+        "score"], "\nEnemy strength: ", gameInfo["enemyStrength"], "\nA=Attack,D=Defend,H=Hold\n"
     infoBar = map(str, info)
     print(''.join(infoBar))
 
@@ -128,6 +107,8 @@ def main():
         key = msvcrt.getch()
         os.system('cls')
         isGameOn = takeActionByKey(key, gameInfo)
-
+        if isGameOn:
+            isGameOn = not isGameOver(gameInfo)
+            print("Game over! You went below -100 score!")
 
 main()
