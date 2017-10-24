@@ -14,8 +14,8 @@ I am using this game project as a studying and practicing tool to learn and impl
     * Combat
     * Inventory
     * Quest Log
-  3 Quests
-  4 Achievements
+  * Quests
+  * Achievements
 *Some of these will come on a later stage*
 * Implement OOP principles.
 * Implement design patterns (Memento/Chain of Responsibility/etc)
@@ -23,3 +23,4 @@ I am using this game project as a studying and practicing tool to learn and impl
   * Add sprites and pictures
   * Add a GUI.
 * Create an installer for the product.
+* Multiplayer (networking?)
