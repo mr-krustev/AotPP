@@ -106,11 +106,9 @@ def main():
         printInfoBar(gameInfo)
         key = msvcrt.getch()
         os.system('cls' if os.name == 'nt' else 'clear')
-        isGameOn = takeActionByKey(key, gameInfo)
+        isGameOn = takeActionByKey(key, gameInfo) and not isGameOver(gameInfo)
 
-        if isGameOn:
-            isGameOn = not isGameOver(gameInfo)
-            if not isGameOn:
-                print("Game over! You went below -100 score!")
+        if not isGameOn:
+            print("Game over! You went below -100 score!")
 
 main()
