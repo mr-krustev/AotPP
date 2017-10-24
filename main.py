@@ -105,10 +105,12 @@ def main():
     while isGameOn:
         printInfoBar(gameInfo)
         key = msvcrt.getch()
-        os.system('cls')
+        os.system('cls' if os.name == 'nt' else 'clear')
         isGameOn = takeActionByKey(key, gameInfo)
+
         if isGameOn:
             isGameOn = not isGameOver(gameInfo)
-            print("Game over! You went below -100 score!")
+            if not isGameOn:
+                print("Game over! You went below -100 score!")
 
 main()
