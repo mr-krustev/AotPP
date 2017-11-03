@@ -1,33 +1,27 @@
 import msvcrt
-import random
-import updates as updates
 import os
 
+import updates
+import validator
+import controls
 # This is where you start the APP.
 # Currently it will hold the whole game as things are being
 # moved to classes following OOP principles.
 
 
 def takeActionByKey(key, gameInfo):
-    if(key == "q"):
+    if(key == controls.contrConf['quit']):
         return False
-    elif(key == "a"):
+    elif(key == controls.contrConf['attack']):
         playerAttack(gameInfo)
-    elif(key == "d"):
+    elif(key == controls.contrConf['defend']):
         playerDefend(gameInfo)
-    elif(key == "h"):
+    elif(key == controls.contrConf['hold']):
         playerHold(gameInfo)
-    elif(key == "l"):
-        playerLevelUp(gameInfo)
+    elif(key == controls.contrConf['options']):
+        controls.updateConfig()
 
     return True
-
-
-def isGameOver(gameInfo):
-    if(gameInfo["score"] <= -100):
-        return True
-
-    return False
 
 
 def playerDefend(gameInfo):
@@ -78,7 +72,7 @@ def playerLevelUp(gameInfo):
 
 def printInfoBar(gameInfo):
     info = "\nPlayer strength: ", gameInfo["playerStrength"], "\tExperience: ", gameInfo["playerExp"], "\tExpReq:", gameInfo["expForNextLevel"], "\tScore: ", gameInfo[
-        "score"], "\nEnemy strength: ", gameInfo["enemyStrength"], "\nA=Attack,D=Defend,H=Hold\n"
+        "score"], "\nEnemy strength: ", gameInfo["enemyStrength"], "\n" + controls.getControlsString() + "\n"
     infoBar = map(str, info)
     print(''.join(infoBar))
 
@@ -93,7 +87,7 @@ def main():
     playerExp = 0
     expForNextLevel = 15
     # enemyInfo
-    enemyStrength = random.randrange(1, playerStrength)
+    enemyStrength = 0
 
     gameInfo = {"score": score,
                 "playerStrength": playerStrength,
@@ -101,14 +95,17 @@ def main():
                 "playerExp": playerExp,
                 "expForNextLevel": expForNextLevel,
                 "playerLevel": playerLevel}
+
+    updates.updateEnemy(gameInfo)
     os.system('cls')
     while isGameOn:
         printInfoBar(gameInfo)
         key = msvcrt.getch()
         os.system('cls' if os.name == 'nt' else 'clear')
-        isGameOn = takeActionByKey(key, gameInfo) and not isGameOver(gameInfo)
+        hasPlayerLost = validator.isGameOver(gameInfo)
+        isGameOn = takeActionByKey(key, gameInfo) and not hasPlayerLost
 
-        if not isGameOn:
+        if hasPlayerLost:
             print("Game over! You went below -100 score!")
 
 main()
