@@ -11,22 +11,18 @@
 			"file": "main.py",
 			"settings":
 			{
-				"buffer_size": 3573,
+				"buffer_size": 2938,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "{\n    \"max-line-length\": 79,\n\n    // list codes for fixes; used by --ignore and --select\n    \"list-fixes\": \"\",\n\n    // do not fix these errors / warnings(e.g. E4, W)\n    \"ignore\": \"E24, E226\",\n\n    // select errors / warnings(e.g. E4, W)\n    \"select\": \"\",\n\n    // number of spaces per indent level\n    \"indent-size\": 4,\n\n    \"format_on_save\": false,\n    \"show_output_panel\": true,\n    // Format/Preview menu items only appear for views\n    // with syntax from `syntax_list`\n    // value is base filename of the .tmLanguage syntax files\n    \"syntax_list\": [\"Python\"],\n\n    \"file_menu_search_depth\": 3, // max depth to search python files\n\n    \"avoid_new_line_in_select_mode\": false,\n\n    // print debug info into the console\n    \"debug\": false\n}",
-			"file": "/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/AutoPEP8/AutoPep8.sublime-settings",
-			"file_size": -1,
-			"file_write_time": -1,
+			"file": "validator.py",
 			"settings":
 			{
-				"buffer_size": 744,
-				"line_ending": "Windows",
-				"read_only": true,
-				"scratch": true
+				"buffer_size": 264,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -34,6 +30,14 @@
 			"settings":
 			{
 				"buffer_size": 164,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "updates.py",
+			"settings":
+			{
+				"buffer_size": 1025,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -195,6 +199,8 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Nazdael/Desktop/Adventures of the Programmer/hero.py",
+		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/AutoPEP8/AutoPep8.sublime-settings",
 		"/C/Users/Nazdael/Desktop/Adventures of the Programmer/README.md",
 		"/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/Color Scheme - Default/Monokai.tmTheme",
 		"/C/Users/Nazdael/Desktop/Python Project/test.py",
@@ -208,7 +214,7 @@
 	],
 	"find":
 	{
-		"height": 131.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -222,6 +228,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"update",
 			"Source",
 			"Embed",
 			"Embedded",
@@ -235,6 +242,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"updates.update"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -254,15 +262,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3573,
+						"buffer_size": 2938,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								914,
-								914
+								2579,
+								2579
 							]
 						],
 						"settings":
@@ -280,12 +288,22 @@
 								{
 									"characters": ".",
 									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
 								}
 							],
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 486.0,
+						"translation.y": 432.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -293,24 +311,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/C/Users/Nazdael/AppData/Roaming/Sublime Text 3/Packages/AutoPEP8/AutoPep8.sublime-settings",
+					"file": "validator.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 744,
+						"buffer_size": 264,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								141,
-								141
+								185,
+								185
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -322,7 +340,7 @@
 				{
 					"buffer": 2,
 					"file": "hero.py",
-					"semi_transient": false,
+					"semi_transient": true,
 					"settings":
 					{
 						"buffer_size": 164,
@@ -332,8 +350,36 @@
 						"selection":
 						[
 							[
-								164,
-								164
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "updates.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1025,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
 							]
 						],
 						"settings":
@@ -349,7 +395,9 @@
 									"selector": "source.python - string - constant.numeric"
 								}
 							],
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -426,12 +474,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"C:\\Users\\Nazdael\\Desktop\\Python Project\\Learning.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
