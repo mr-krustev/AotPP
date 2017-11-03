@@ -21,11 +21,15 @@ def updateConfig():
 	for setting, value in contrConf.items():
 		text = "Button for " + setting + ": "
 		response = raw_input(text)
-		response = re.split(' |;|:|\n|!', response)[0]
+		#First array element, first letter
+		response = re.split(' |;|:|\n|!', response)[0][0]
 		if response == "":
 			newConf[setting] = value
 			continue
-		newConf[setting] = response
+		if response not in newConf.values():
+			newConf[setting] = response
+		else:
+			newConf[setting] = value
 
 	shouldSave = validator.confirmSave(raw_input("Save settings? [Y/N]: "))
 	if shouldSave:
